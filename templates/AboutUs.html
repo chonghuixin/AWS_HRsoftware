@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('https://yeechooili-bucket.s3.amazonaws.com/good+vibes+only.jpg');
+      min-height: 100%;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="/" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Add Employee</a>
+    <a href="/getemp" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">View Employee</a>
+    <a href="/about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Group CTY</b></h1>
+    <p>From RDS2S3G1</p>
+    <img src="https://yeechooili-bucket.s3.amazonaws.com/good+vibes+only.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="https://yeechooili-bucket.s3.amazonaws.com/good+vibes+only.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Our group consist of 3 member including Chong Hui Xin, Tham Jun Xian and Yee Chooi Li. 
+    </p>
+    <h3 class="w3-padding-16">Our Characteristics</h3>
+    <p class="w3-wide">Like to hang out</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:65%">65%</div>
+    </div>
+    <p class="w3-wide">Scared for Assignment</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:99%">99%</div>
+    </div>
+    <p class="w3-wide">Prepare for final exam</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:15%">15%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <h3 class="w3-padding-16">Project in Progress</h3>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">70%</span><br>
+        Cloud Computing
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">80%</span><br>
+        Data Warehouse
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55%</span><br>
+        Data Engineering
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10%</span><br>
+        Machine Learning
+      </div>
+    </div>
+
+    <!-- Desc -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="desc"></div>
+    <h3 class="w3-padding-24">Our Description</h3>
+    <img src="https://yeechooili-bucket.s3.amazonaws.com/chooili.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Yee Chooi Li.</span> Web Designer.</p>
+    <p>I am a work in progress.</p><br>
+   
+    <img src="https://yeechooili-bucket.s3.amazonaws.com/huixin.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chong Hui Xin.</span> Chief Marketing Officer.</p>
+    <p>Wherever I go, I leave sparkles..</p><br>
+    
+    <img src="https://yeechooili-bucket.s3.amazonaws.com/junxian.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Tham Jun Xian.</span> Chief Technology Officer.</p>
+    <p>I’m so cool; even ice cubes are jealous!</p><br>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="contact"></div>
+      <h2 class="w3-padding-24">Contact Me</h2>
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Taruc, Setapak</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 07-3533365</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: groupCTY@mail.com</p>
+      </div>
+    
+      <!-- Image of location/map -->
+      <img src="https://yeechooili-bucket.s3.amazonaws.com/taruc+setapak.jpg" class="w3-image w3-greyscale" style="width:100%;margin:25px 0">
+
+      <!-- End Contact Section -->  
+  </div>
+
+
+  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-10px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-small">Thank for visiting our website!</p>
+    <!-- End footer -->
+  </footer>
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "30%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

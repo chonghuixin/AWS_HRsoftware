@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		html {
+			background: #ffc8dd;
+			height: 100%;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		body {
+			background-color: #bde0fe;
+			min-height: 100%;
+			margin: 0px auto;
+			min-width: 320px;
+			max-width: 1024px;
+			width: 100%;
+		}
+
+		header {
+			height: 100%;
+			width: 100%;
+			color: rgb(255, 209, 26);
+			position: sticky;
+		}
+
+		div#textlinks {
+			display: flex;
+			align-items: center;
+			flex-wrap: nowrap;
+			margin: 10px 10px 0px 10px;
+			padding: 10px;
+			background-color: #a2d2ff;
+		}
+
+		div#textlinks a {
+			color: #000000;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			margin: 10px 10px 0px 10px;
+			padding: 10px 10px 15px 10px;
+			font-size: 150%
+		}
+
+		.maindrop {
+			display: block;
+			border: none;
+			background-color: inherit;
+			margin: 0px;
+			padding: 12px 12px 12px 12px;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<header>
+			<div class="maindrop">
+				<div id="textlinks" class="link-content">
+					<div><a href="/home">Home Page</a></div>
+					<div><a href="/">Add Employee</a></div>
+					<div><a href="/getemp">View Employee</a></div>
+					<div><a href="/about">About Us</a></div>
+				</div>
+			</div>
+				</header>
+		<!-- Navbar End -->
+	</center>
+
+	<center>
+		<font color="DodgerBlue" size="5" style="font-family: avenir">
+			<body>
+				<h1 style="color: #d90429; margin: 5%;">SAVE SUCCESSFUL</h1><br>
+				<h2 style="color: black; margin: 5;">Following Employee has been added to the database</h2><br>
+				<h2 style="color: black">{{ name }}</h2><br>
+				<title>Add Emp Output</title>
+					<form action="http://3.236.132.34/" autocomplete="on" method = "GET">
+						<button type="submit" style="background: #e63946;font-size:14pt; height: 45px; width: 200px; color:white; font:oblique;">GO BACK</button><br><br>
+					</form>
+			</body>
+		</font>
+	</center>
+	
+</body>
+</html>

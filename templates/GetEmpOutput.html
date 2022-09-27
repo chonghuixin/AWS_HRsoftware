@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Information</title>
+	<style>
+		html {
+			background: #ffc8dd;
+			height: 100%;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		body {
+			background-color: #bde0fe;
+			min-height: 100%;
+			margin: 0px auto;
+			min-width: 320px;
+			max-width: 1024px;
+			width: 100%;
+		}
+
+		header {
+			height: 100%;
+			width: 100%;
+			color: rgb(255, 209, 26);
+			position: sticky;
+		}
+
+		div#textlinks {
+			display: flex;
+			align-items: center;
+			flex-wrap: nowrap;
+			margin: 10px 10px 0px 10px;
+			padding: 10px;
+			background-color: #a2d2ff;
+		}
+
+		div#textlinks a {
+			color: #000000;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+			margin: 10px 10px 0px 10px;
+			padding: 10px 10px 15px 10px;
+			font-size: 150%
+		}
+
+		.maindrop {
+			display: block;
+			border: none;
+			background-color: inherit;
+			margin: 0px;
+			padding: 12px 12px 12px 12px;
+		}
+	</style>
+
+</head>
+
+<body>
+<center>
+	<header>
+		<div class="maindrop">
+			<div id="textlinks" class="link-content">
+				<div><a href="/">Add Employee</a></div>
+				<div><a href="/getemp">View Employee</a></div>
+				<div><a href="/about">About Us</a></div>
+			</div>
+		</div>
+	</header>	
+</center>
+
+<center>
+		<h1 style="color: rgb(19, 128, 238); font-size: 40px;font-family: avenir;">Employee Information</h1>
+			<form style="font-size:25px ;font-family: Arial, Helvetica, sans-serif;">
+				<div>
+
+			  		Employee ID:<br> {{ id }} <br><br>
+
+			  		First Name:<br> {{ fname }} <br><br>
+
+			  		Last Name:<br> {{ lname }} <br><br>
+
+			  		Primary Interest:<br> {{ interest }} <br><br>
+
+			  		Location:<br> {{ location }} <br><br>
+
+					<!-- Image URL: <br> {{ image_url }} <br><br> -->
+
+			  		Image URL: <img src="{{ image_url }}">  <br><br>
+
+			  		<button type="submit" style="background: #e63946;font-size:20pt;margin: 10px;height: 45px; width: 25%; color:white; font:oblique;" formaction="http://3.236.132.34/">RESET</button><br><br>
+
+			  	</div>
+			</form>
+		</body>
+
+	</font>
+</center>
+</html>
